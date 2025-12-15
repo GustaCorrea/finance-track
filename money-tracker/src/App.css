@@ -1,0 +1,83 @@
+/* 1. O Fundo da Tela Inteira */
+body {
+  background-color: #121214; /* Preto quase cinza (fundo total) */
+  color: #e1e1e6; /* Texto claro */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Alinha tudo no centro horizontalmente */
+  min-height: 100vh; /* Garante que ocupa a altura toda da tela */
+}
+
+/* 2. O Cartão Central (Container) */
+.container {
+  background-color: #202024; /* Cinza um pouco mais claro para destaque */
+  width: 100%;
+  max-width: 600px; /* Largura máxima para não esticar demais */
+  margin-top: 50px; /* Um espaço do topo */
+  padding: 2rem; /* Espaço interno (respiro) */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* --- Atualize essa parte no App.css --- */
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* O Segredo: Permite que os itens caiam para a linha de baixo */
+  gap: 15px;      /* Aumentei um pouco o espaço entre eles */
+  margin-bottom: 2rem;
+}
+
+input, select {
+  background-color: #121214;
+  border: 1px solid #323238;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  flex: 1; /* Faz os campos esticarem para preencher o buraco */
+  min-width: 180px; /* Se o campo ficar menor que isso, ele pula de linha */
+}
+
+/* Opcional: Forçar a "Descrição" a ocupar a linha inteira sozinha */
+/* Se quiser testar, pode descomentar a linha abaixo: */
+/* input[type="text"] { min-width: 100%; } */
+
+button[type="submit"] {
+  background-color: #00875f;
+  color: white;
+  border: none;
+  padding: 15px; /* Botão mais gordinho */
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%; /* Botão ocupa a largura total em baixo */
+}
+
+button[type="submit"]:hover {
+  background-color: #0b5c19; /* Escurece ao passar o mouse */
+}
+
+/* A Lista */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #29292e; /* Fundo de cada item da lista */
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
